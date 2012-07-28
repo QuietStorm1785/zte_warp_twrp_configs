@@ -1,0 +1,195 @@
+###########################
+# system.prop for arthur  #
+###########################
+
+
+##RIL values###########################
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.telephony.support_ipv4=true
+##persist.telephony.support_ipv6=true
+ril.subscription.types=NV
+ro.telephony.ril_class=lgeqcom
+ro.ril.def.preferred.network=4
+ro.telephony.default_network=4 
+ro.build.baseband_version=N860B01
+ro.build.software_version=N860V1.0.0B08
+ro.build.sw_internal_version=N860V1.0.0B16
+ro.com.android.dataroaming=true
+ro.telephony.ril_nid=65535
+ro.telephony.ril_prl=61007
+ro.cdma.home.operator.numeric=310000
+ro.cdma.home.operator.alpha=Boost Mobile
+gsm.operator.alpha=Boost Mobile
+gsm.sim.operator.numeric=310000
+gsm.operator.numeric=310000
+gsm.sim.operator.iso-country=us
+gsm.operator.iso-country=us
+ro.ril.oem.ecclist=911,112,999,000,08,118,120,122,110,119,995
+ro.telephony.cdma.ecclist=911,112,999,000,08,118,120,122,110,119,995
+ro.telephony.gsm.ecclist=911,112,999,000,08,118,120,122,110,119,995
+persist.radio.adb_log_on=1
+#ro.cdma.data_retry_config = max_retries=infinite,0,0,60000,120000,480000,900000
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=70
+persist.radio.agps.mode=6
+mobiledata.interfaces=rmnet0,rmnet1,rmnet2,rmnet3,rmnet4,rmnet5,rmnet6,rmnet7,sit0,gre0,tunl0,ip6tunl0,usb0,wlan0,gprs
+#######################################
+
+
+######Props for CNE module#############
+persist.cne.UseCne=false
+persist.cne.loadVendorCne=true
+persist.cne.bat.range.low.med=30
+persist.cne.bat.range.med.high=60
+persist.cne.loc.policy.op=/system/etc/OperatorPolicy.xml
+persist.cne.loc.policy.user=/system/etc/UserPolicy.xml
+persist.cne.bwbased.rat.sel=true
+persist.cne.snsr.based.rat.mgt=true
+persist.cne.bat.based.rat.mgt=true
+persist.cne.rat.acq.time.out=30000
+persist.cne.rat.acq.retry.tout=0
+#######################################
+
+DEVICE_PROVISIONED=1
+
+##Bluetooth Dialup networking##########
+ro.qualcomm.bluetooth.dun=true
+#######################################
+
+##Datamodules##########################
+ro.use_data_netmgrd=true
+persist.data_netmgrd_nint=16
+persist.data_netmgrd_mtu=1428
+#######################################
+
+
+##Dalvik cache values##################
+dalvik.vm.heapsize=32m
+ro.sf.lcd_density=240
+ro.sf.hwrotation=180
+#######################################
+
+##################################
+# ADDITIONAL_BUILD_PROPERTIES    #
+##################################
+ro.build.modversion=Cyanogenmod 7.2.0
+ro.camera.video.size.mms=1048576
+ro.camera.video.duaration.mms=40
+ro.com.google.clientidbase=android-zte
+ro.com.google.clientidbase.yt=android-boost-us
+ro.com.google.clientidbase.am=android-boost-us
+ro.com.google.clientidbase.ms=android-boost-us
+ro.com.google.clientidbase.gmm=android-zte
+ro.com.google.locationfeatures=1
+ro.com.google.clientidbase=android-zte
+ro.com.google.clientidbase.yt=android-zte
+ro.com.google.clientidbase.am=android-zte
+ro.com.google.clientidbase.ms=android-zte
+ro.com.google.clientidbase.gmm=android-zte
+ro.com.google.gmsversion=2.3_r7
+persist.sys.usb.enable_switch=1
+persist.sys.usb.linux_switch=1
+persist.sys.usb.switch_pid=0x1354
+persist.sys.usb.linux_pid=0x1350
+persist.sys.usb.default.pid=0x83
+persist.sys.sdcard.mount=1ro.ril.def.preferred.network=4
+ro.telephony.default_network=4 
+persist.sys.usb.switch_pid=0x1351
+persist.sys.usb.unique_sn=1
+persist.sys.usb.enable_cdrom=0x5656
+net.bt.name=Android
+ro.setupwizard.mode=DISABLED
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+
+#########Performance Tweaks############
+#				      #
+#######################################
+ro.config.hwfeature_wakeupkey=0
+windowsmgr.max_events_per_sec=150
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+persist.adb.notify=1
+debug.performance.tuning=1
+video.accelerate.he=1
+ro.media.enc.hprof.vid.bps =8000000
+ro.media.capture.maxees=8m
+ro.media.capture.fast.fps =4
+ro.media.capture.slow.fps=120
+ro.media.capture.flashMinV=33000000
+ro.media. capture.torchIntensity=40
+ro.media.capture.torchIntensity=70
+ro.media.panorama.defres=3264x1840
+ro.media.capture.panorama.frameres=1280x720
+ro.camcorder.videoModes=true
+pm.sleep_mode=1
+windowsmgr.max_events_per_sec=180
+ro.mot.eri.losalert.delay=1000 
+ro.media.enc.jpeg.quality=90
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+#buffer tweaks
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+ro.telephony.call_ring.delay=0
+ro.lge.proximity.delay=150
+mot.proximity.delay=150
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+
+##################################################
+
+###########   ###############    ###########
+#             #      #      #             #
+#             #      #      #            #
+#             #      #      #           #
+#             #      #      #          # 
+#             #      #      #         # 
+###########   #      #      #        #
+
+
+###########   ###########    #########
+#             #         #    #       #
+#             #         #    #       #
+#             #         #    #       #
+#####         #         #    #########
+#             #         #    #     #
+#             #         #    #      #
+#             ###########    #       #
+
+
+##############  ###################  ################
+            #            # 	     #
+           #             #           #
+          #              #           #
+         #               #           #
+        #                #           #
+       #                 #           ##########
+      #                  #           #
+     #			 #           #
+    #			 #           #
+   #			 #           #
+  #			 #           #
+ #			 #           #
+##############		 #           ################
+
+##End System.prop values###############
+
